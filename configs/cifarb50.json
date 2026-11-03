@@ -1,0 +1,31 @@
+{
+  "prefix": "-",
+  "dataset": "cifar224",
+  "memory_size": 2000,
+  "memory_per_class": 20,
+  "fixed_memory": false,
+  "shuffle": true,
+  "init_cls": 50,
+  "increment": 10,
+  "model_name": "gkgla",
+  "convnet_type": "clip",
+  "device": [
+    "0"
+  ],
+  "seed": [
+    1993
+  ],
+  "frozen_layers": "visual",
+  "tuned_epoch": 10,
+  "init_lr": 0.001,
+  "batch_size": 64,
+  "weight_decay": 0.05,
+  "data_root": "./data",
+  "clip_pretrained": "laion400m_e32",
+  "lora_rank": 64,
+  "lora_alpha": 128.0,
+  "fusion_num_layers": 5,
+  "context_prompt_length_per_task": 3,
+  "training_seed": 1,
+  "num_workers": 8
+}
